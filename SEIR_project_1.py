@@ -16,16 +16,17 @@ class Simple_Engine:
                 
                 results_body = soup.find('body')
                 print(results_body.text,end="\n")
-
+        
                 results_a_tag = results_body.find_all('a')
-
+        
                 for tag in results_a_tag:       ##Source - https://automatetheboringstuff.com/3e/chapter13.html
                         link_URL = tag.get("href")
                         print(link_URL)
 
-# Source - https://stackoverflow.com/a/70833
 
-import sys
+
+import sys       # Source - https://stackoverflow.com/a/70833
 obj = Simple_Engine(sys.argv[1])
 print(obj.Scrap())
+
 
