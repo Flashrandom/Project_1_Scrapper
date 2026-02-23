@@ -5,13 +5,13 @@ import bs4
 from bs4 import BeautifulSoup
 # Source - https://stackoverflow.com/a/4033743
 
-class Crawler_Engine:
+class Simple_Engine:
         def __init__(self,URL_link):
-                self.URL_link = URL_link
+                self.url_link = url_link
                       
-        def crawler(self):
+        def Scrap(self):
                 # URL = "https://outlier.ai/"
-                page = requests.get(self.URL_link)
+                page = requests.get(self.url_link)
                 soup = BeautifulSoup(page.content, "html.parser")
                 
                 results_body = soup.find('body')
@@ -19,12 +19,13 @@ class Crawler_Engine:
 
                 results_a_tag = results_body.find_all('a')
 
-                for tag in results_a_tag:
+                for tag in results_a_tag:       ##Source - https://automatetheboringstuff.com/3e/chapter13.html
                         link_URL = tag.get("href")
                         print(link_URL)
 
 # Source - https://stackoverflow.com/a/70833
 
 import sys
-obj = Crawler_Engine(sys.argv[1])
-print(obj.crawler())
+obj = Simple_Engine(sys.argv[1])
+print(obj.Scrap())
+
