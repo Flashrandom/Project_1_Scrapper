@@ -6,7 +6,13 @@ A simple Python program that fetches a webpage and prints:
 - Page Title (without HTML tags)
 - Page Body Text
 - All URLs present on the page
-
+## References:
+# for learning command line
+- https://stackoverflow.com/questions/4033723/how-do-i-access-command-line-arguments/4033743#4033743
+# For Revising beutifulsoup4
+- https://www.geeksforgeeks.org/python/implementing-web-scraping-python-beautiful-soup/
+# for fetching the links 
+- https://automatetheboringstuff.com/3e/chapter13.html
 ## Requirements
 
 - Python 3
