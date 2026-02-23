@@ -1,4 +1,5 @@
-# Crawler_Engine
+# Project_1_Scrapper
+
 This is a project on a web crawler which crawls title, web links attached in a given page. 
 
 A simple Python program that fetches a webpage and prints:
